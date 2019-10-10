@@ -12,15 +12,21 @@ def remove_tags(text):
     return tag_remover.sub('', text)
 
 
-word_list = ['Wahlen 2019', 'E-Sport', 'Zürich', 'Bern', 'Sport']
+word_list_de = ['Wahlen 2019', 'E-Sport', 'Zürich', 'Bern', 'Sport', 'Ausland', 'Wirtschaft']
+word_list_fr = ['Genève', 'E-Sport', 'Vaud', 'Romandi', 'Sport', 'Planète', 'Economie']
 
 urls = []
-for word in word_list:
-    base_url = 'http://api.20min.ch/search/story/?key=ef023945bbcc86caadae759fcd4c1d4f&json&lang=de&Query={0}&start='.format(
-            word)
-    urls.append(base_url)
+for word in word_list_fr:
+    base_url = 'http://api.20min.ch/search/story/?key=ef023945bbcc86caadae759fcd4c1d4f&json&lang=fr&Query={0}&start='.format(
+            word)
+    urls.append(base_url)
 
-print(urls)
+for word in word_list_de:
+    base_url = 'http://api.20min.ch/search/story/?key=ef023945bbcc86caadae759fcd4c1d4f&json&lang=de&Query={0}&start='.format(
+            word)
+    urls.append(base_url)
+
+
 sub_links = []
 for p in urls:
     t = requests.get(p)
