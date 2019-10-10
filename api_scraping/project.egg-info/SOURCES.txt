@@ -1,0 +1,13 @@
+setup.py
+api_scraping/__init__.py
+api_scraping/items.py
+api_scraping/middlewares.py
+api_scraping/pipelines.py
+api_scraping/settings.py
+api_scraping/spiders/__init__.py
+api_scraping/spiders/spyder.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

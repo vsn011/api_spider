@@ -1,0 +1,3 @@
+[scrapy]
+settings = api_scraping.settings
+
