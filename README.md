@@ -42,3 +42,5 @@ Further steps and tips for improvement:
 - The algorithm used to generate the list of search string could be turned into function and moved to a separate file in order to get a cleaner code
 - Instead of generating a list of url strings in advanced, another option would be to instruct Scrapy to follow the discovered links
 - Additional measures in Pipelines and Settings should be applied for filtering duplicate rows, as one article can appear in multiple searches
+
+compressed json file: https://www.dropbox.com/s/6fc0gls8oiok9hb/items.rar?dl=0
